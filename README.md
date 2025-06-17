@@ -12,7 +12,8 @@
 * Método de autenticação e criptografia -> JWT e BCrypt
 
 # Documento de configuração para rodar o projeto
-[Documento de instalação - A3 Usabilidade.pdf](https://github.com/user-attachments/files/20781849/Documento.de.instalacao.-.A3.Usabilidade.pdf)
+[Documento de instalacao - A3 Usabilidade.pdf](https://github.com/user-attachments/files/20782946/Documento.de.instalacao.-.A3.Usabilidade.pdf)
+
 
 
 # Link para protótipo no Figma
