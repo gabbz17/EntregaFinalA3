@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const path = require('path'); // Importe o módulo 'path'
+const path = require('path'); 
 const userRoutes = require('./routes/users');
 const restaurantRoutes = require('./routes/restaurants');
 const productRoutes = require('./routes/products');
@@ -33,17 +33,9 @@ app.use((req, res, next) => {
     next();
 });
 
-// --- Middleware para servir arquivos estáticos (ADICIONADO AQUI!) ---
 // Servir imagens da pasta backend/img
 app.use('/img', express.static(path.join(__dirname, 'img')));
 
-// Se o seu frontend também estiver servindo a pasta 'public'
-// e você quer que o backend sirva APENAS as imagens específicas do backend,
-// pode ser uma boa ideia dar um prefixo para as imagens:
-// app.use('/images', express.static(path.join(__dirname, '../frontend-app/public')));
-// Nesse caso, a URL seria: /images/Cafe&Cia.svg
-// Mas para o seu caso de '/Cafe&Cia.svg', a primeira opção é a correta.
-// --------------------------------------------------------------------
 
 // Rotas da sua API
 app.use('/users', userRoutes);
